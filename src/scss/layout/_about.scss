@@ -1,0 +1,60 @@
+.about {
+  padding: 10rem 0;
+  position: relative;
+  background-color: transparent;
+  font-size: $default-font;
+  z-index: 0;
+
+  &__title {
+    &-container {
+      display: inline-block;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-content {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 20px;
+    }
+  }
+
+  &__block {
+    background-color: white;
+    padding: .7rem;
+    color: $color-grey-3;
+    transition: all .4s;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 5rem 10rem rgba($color-grey-3, .27);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10rem 20rem rgba($color-grey-3, .7);
+      color: $color-grey-4;
+    }
+
+    &-group {
+      left: 50%;
+      padding: 5rem;
+      width: fit-content;
+      transform: translateX(-50%);
+      position: absolute;
+      display: flex;
+      gap: .5rem;
+    }
+  }
+
+  &__details {
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: $default-font;
+    color:$color-grey-3;
+
+    & p {
+      line-height: 2.5;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.record {
+  padding: 10rem 0;
+  width: 98vw;
+  //background-image: url("@");
+  &__title {
+    font-size: 3rem;
+    font-weight: 200;
+    //color: white;
+    margin-left: 2rem;
+  }
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__map:hover &__btn {
+    opacity: 1;
+    transform: none;
+  }
+
+  &__view {
+    margin: 0 auto;
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
+    transition: .5s all;
+  }
+
+  &__group {
+    padding: 1rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    position: relative;
+    transition: .5s all linear;
+  }
+
+  &__card {
+    border: 5px solid $color-white;
+    border-radius: 2rem;
+    background-color: $color-primary-light;
+    overflow: visible;
+    padding: 1rem;
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_left {
+      height: 10rem;
+      width: 10rem;
+    }
+
+    &_right {
+      height: 75%;
+      width: 30rem;
+      display: inline-block;
+      border-left: 1px solid white;
+      padding-left: 2rem;
+      font-size: 2.2rem;
+      color: white;
+    }
+  }
+
+  &__btn {
+    height: 5rem;
+    width: 5rem;
+    color: white;
+    background-color: $color-primary-light;
+    border-radius: 50%;
+    padding: 1rem;
+    position: relative;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    box-shadow: 0 10rem 20rem rgba($color-grey-1, .17);
+
+    &:hover {
+      transform: scale(1.15) !important;
+      cursor: pointer;
+    }
+
+    &-left {
+      float: left;
+      transform: translateX(100%);
+    }
+
+    &-right {
+      float: right;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+//背景视频
+/*
+.bg-video {
+  position: relative;
+  width: 50rem;
+  height: 40rem;
+  background-color: red;
+
+  & video {
+    width: 50rem;
+    height: 40rem;
+  }
+}
+ */

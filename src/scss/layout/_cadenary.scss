@@ -1,0 +1,51 @@
+.calendar {
+  background-color: $color-grey-0;
+  height: fit-content;
+  padding: 5rem;
+  display: flex;
+  gap: 10rem;
+
+  &__github {
+    margin-top: 2rem;
+    height: fit-content;
+    &-show {
+      width: fit-content;
+       & img{
+         box-shadow: 0 10rem 20rem rgba($color-grey-2,.17);
+       }
+    }
+
+    &-icon {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+
+      & svg {
+        transform: scale(.5);
+      }
+    }
+
+    &-tip {
+      display: block;
+      background-color: #000;
+      color: white;
+      position: absolute;
+      font-size: $default-font;
+      border-radius: 6px;
+      padding: .5rem;
+      z-index: 2;
+      opacity: .7;
+    }
+
+    &-title {
+      display: inline-block;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__leetcode{
+    padding: 2rem;
+    height: fit-content;
+  }
+}

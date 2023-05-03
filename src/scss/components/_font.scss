@@ -1,0 +1,8 @@
+.gradient-title{
+  background-image: linear-gradient(to right , $color-primary-light , $color-primary);
+  font-size: 2rem;
+  color:transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  display: inline-block;
+}

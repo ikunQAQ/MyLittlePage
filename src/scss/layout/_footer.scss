@@ -1,0 +1,31 @@
+.footer {
+  height: 30%;
+  padding: 5rem 10rem;
+  background-color: black;
+  display: block;
+
+  color:white;
+  font-size:$default-font;
+
+  &__logo{
+    margin:0 auto 2rem auto;
+    height:5rem;
+    display: block;
+    width: fit-content;
+  }
+  &__link {
+    display: flex;
+    gap: 10rem;
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: $default-font;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+  }
+}

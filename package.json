@@ -1,0 +1,27 @@
+{
+  "name": "page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "compile:sass": "sass src/scss/main.scss src/style.css",
+    "watch:sass": "sass src/scss/main.scss src/style.css --watch",
+    "start": "npm-run-all --parallel dev watch:sass"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "hexo-server": "^3.0.0",
+    "sass": "^1.62.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "hexo-githubcalendar": "^1.2.3",
+    "hexo-leetcode-calendar": "^0.4.0",
+    "npm-run-all": "^4.1.5",
+    "vite": "^4.3.0",
+    "vuex": "^4.1.0"
+  }
+}
