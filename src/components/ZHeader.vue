@@ -1,5 +1,5 @@
 <template>
-  <section class="header">
+  <section class="header" id="home">
     <div class="header__back">
     </div>
     <div class="header__content">
@@ -17,15 +17,11 @@
 <script>
 export default {
   name: "ZHeader",
-  data(){
+  data() {
     return {
-      titlePrimary:'琴团长不在家.',
-      titleSecondary:'可莉随便炸!'
+      titlePrimary: '静水长流.',
+      titleSecondary: '-这是我的个人主页-'
     }
   }
 }
 </script>
-
-<style scoped>
-
-</style>

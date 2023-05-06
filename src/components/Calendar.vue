@@ -1,5 +1,5 @@
 <template>
-  <section class="calendar">
+  <section class="calendar" id="calendar">
     <div class="calendar__github">
       <div class="calendar__github-icon">
         <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

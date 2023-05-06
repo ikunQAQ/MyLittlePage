@@ -1,9 +1,32 @@
-# Vue 3 + Vite + Sass + nodejs
+<h1>title</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<br>
+开发环境:
 
-## Recommended IDE Setup
+1.node v-19.0.0 + ,
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+2.npm v-9.4.0+,
 
-{% leetcode hopeful-bell3cb %}
+3.详情见package.json
+
+<br>
+
+```
+开发环境运行:
+
+1.npm install
+
+2.npm run start 
+```
+
+```
+终端运行
+1.npm install
+2.build:css
+3.vite biuld
+4.nohup npm run server
+```
+```
+日历更新
+1.hexo build
+```

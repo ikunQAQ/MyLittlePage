@@ -8,7 +8,7 @@
   &__front {
     height: 7rem;
     width: 7rem;
-    background-color: $color-white ;
+    background-color: $color-white;
     border-radius: 50%;
     z-index: 2000;
     display: block;
@@ -110,6 +110,12 @@
       width: 3rem;
       background-color: $color-grey-1;
       display: inline-block;
+    }
+
+    &::selection,
+    &::before::selection,
+    &::after::selection {
+      background-color: transparent;
     }
 
     &::before, &::after {

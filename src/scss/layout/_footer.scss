@@ -1,31 +1,49 @@
 .footer {
   height: 30%;
-  padding: 5rem 10rem;
-  background-color: black;
-  display: block;
+  padding: 10rem 0;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  color:white;
-  font-size:$default-font;
+  color: white;
+  font-size: $default-font;
 
-  &__logo{
-    margin:0 auto 2rem auto;
-    height:5rem;
-    display: block;
-    width: fit-content;
-  }
+  //&__logo{
+  //  margin:0 auto 2rem auto;
+  //  height:5rem;
+  //  display: block;
+  //  width: fit-content;
+  //}
+
   &__link {
+    margin-left: 10rem;
     display: flex;
-    gap: 10rem;
+    gap: 8rem;
+
+    &-title {
+      margin-left:10rem;
+      transform: translateY(-3rem);
+    }
+
 
     a {
       text-decoration: none;
       color: $color-white;
       font-size: $default-font;
-    }
-  }
+      padding: 1rem;
 
-  &__bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
+      &:hover {
+        color:$color-primary;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+        transform:scale(1.2);
+      }
+
+      &:not(:last-child) ::after {
+        content: '';
+        display: inline-block;
+        height: 2rem;
+        width: 1rem;
+      }
+    }
   }
 }

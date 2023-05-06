@@ -17,7 +17,7 @@ import ZFooter from "./components/ZFooter.vue";
 
 export default {
   name: "App",
-  components: {ZHeader, Navigation, About, Calendar, Record, ZFooter}
+  components: {ZHeader, Navigation, About, Calendar, Record, ZFooter,}
 }
 </script>
 

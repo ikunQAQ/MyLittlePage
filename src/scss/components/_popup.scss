@@ -1,0 +1,49 @@
+.popup {
+  background-color: rgba(170, 170, 170, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 688;
+  transition: .5s all;
+  width: 100%;
+
+  &_show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+
+  &_init {
+    transform: scale(.5);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &-content {
+    height: calc(100% - 20rem);
+    position: fixed;
+    top: 10rem;
+    margin: 0 auto;
+    display: block;
+    z-index: 999;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .17);
+    border-radius: 2rem;
+    left: calc(50% - 35rem);
+    color: #333;
+    background-color: white;
+    font-size: 1.6rem;
+    transition: .5s all;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+
+    &:target {
+      width: 70rem;
+      opacity: 1;
+      transform: scale(1);
+      visibility: visible;
+    }
+  }
+}
+
