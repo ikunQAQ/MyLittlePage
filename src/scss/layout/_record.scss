@@ -43,13 +43,16 @@
     border: 5px solid $color-white;
     border-radius: 2rem;
     background-color: $color-primary-light;
-    overflow: visible;
     padding: 1rem;
     width: 40rem;
     height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+    text-overflow: ellipsis;;
 
     &_left {
       height: 10rem;

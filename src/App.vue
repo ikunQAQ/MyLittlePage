@@ -17,7 +17,24 @@ import ZFooter from "./components/ZFooter.vue";
 
 export default {
   name: "App",
-  components: {ZHeader, Navigation, About, Calendar, Record, ZFooter,}
+  components: {ZHeader, Navigation, About, Calendar, Record, ZFooter,},
+  data() {
+    return {
+      scrollTopNum: ""
+    }
+  },
+  methods: {
+    handleScroll() {
+      //获取当前滚动差
+      this.scrollTopNum = document.documentElement.scrollTop ||
+          document.body.scrollTop ||
+          window.pageYOffset;
+      // console.log(this.scrollTopNum);
+    }
+  },
+  mounted() {
+    window.onscroll = this.handleScroll;
+  }
 }
 </script>
 

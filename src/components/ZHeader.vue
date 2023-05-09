@@ -19,7 +19,7 @@ export default {
   name: "ZHeader",
   data() {
     return {
-      titlePrimary: '静水长流.',
+      titlePrimary: '静水流长.',
       titleSecondary: '-这是我的个人主页-'
     }
   }
